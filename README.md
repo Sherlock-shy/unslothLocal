@@ -46,7 +46,7 @@ After creation of environment, you can install the requirements
 pip install -r requirements.txt
 ```
 
-I recommend really the <a href="https://github.com/unslothai/unsloth/blob/main/README.md">read me</a> from the unsloth first before using this code if you really want to use my crippled code lol
+I recommend really have a look on the <a href="https://github.com/unslothai/unsloth/blob/main/README.md">read me</a> from unsloth first before using this code if you really want to use this code wrote by my crippled hands lol
 
 <h3>datasets structure for the code</h3>
 So for the dtaasets, I am using a structure where it have an conversation_id, role, either the input role or output role and the content.
