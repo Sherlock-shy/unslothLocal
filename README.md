@@ -49,10 +49,7 @@ pip install -r requirements.txt
 I recommend really the <a href="https://github.com/unslothai/unsloth/blob/main/README.md">read me</a> from the unsloth first before using this code if you really want to use my crippled code lol
 
 <h3>datasets structure for the code</h3>
-So for the dtaasets, I am using a structure where it have:
-1. conversation_id
-2. role, either the input role or output role
-3. the content
+So for the dtaasets, I am using a structure where it have an conversation_id, role, either the input role or output role and the content.
 
 This is a multi turn conversation datastructure, if you want to use any other structure,  you can, but you will have to modify the trainer, testing validations code as well.
 
