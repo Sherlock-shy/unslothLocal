@@ -1,8 +1,7 @@
 <h1>unslothLocal</h1>
 Modified code to run unsloth finetuning locally.
-This is the code let me run the unsloth locally for finetuning.
-Why don't you use google collab they provided you ask?
-Cause when i tried to trian it with small training rate, google collab say I need to pay to run long term and it stop me in the middle of training and I don't wanna pay it, I have an 4070 super, why don't I use it instead?
+Q: Why don't you use google collab they provided you ask?
+A: I am bored
 
 <h2>Original project and soucre code</h2>
 
@@ -12,15 +11,15 @@ Cause when i tried to trian it with small training rate, google collab say I nee
 
 <h3>What you needed</h3>
 
-If on windows, install wsl2 and ubuntu
-Windows cannot run it direcly as the <a href="https://github.com/triton-lang/triton">Triton</a> is not supporting windows
+If you are using windows, please install wsl2 to run the code as <a href="https://github.com/triton-lang/triton">Triton</a> are not supporting on windows
 
 linux should be able to run the code without problems
 
-I don't use mac so I have no idea how to do that, you have to figure it out yourself
+I don't have a mac so I have no idea how to run on it, you may have to figure it out yourself.
 
-Install miniconda/conda if you want to use that, or not use pip
+<h2>Environment setup</h2>
 
+I am using conda, simply run:
 ```bash
 conda create --name unsloth_env \
     python=3.11 \
@@ -46,12 +45,15 @@ After creation of environment, you can install the requirements
 pip install -r requirements.txt
 ```
 
-I recommend really have a look on the <a href="https://github.com/unslothai/unsloth/blob/main/README.md">read me</a> from unsloth first before using this code if you really want to use this code wrote by my crippled hands lol
+Please read <a href="https://github.com/unslothai/unsloth/blob/main/README.md">read me</a> from unsloth first before using this code.
+This code are not suppose to be used.
 
 <h3>datasets structure for the code</h3>
-So for the dtaasets, I am using a structure where it have an conversation_id, role, either the input role or output role and the content.
+- conversation_id
+- role 
+- the input role, output role and the content.
 
-This is a multi turn conversation datastructure, if you want to use any other structure,  you can, but you will have to modify the trainer, testing validations code as well.
+This is a multi turn conversation datastructure, if you want to use any other structure,  please modify the trainer and testing validations code as well.
 
 
 
